@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>TP9</title>
+</head>
+<body>
+    <main class="min-vh-100 container d-flex justify-content-center align-items-center flex-column">
+        <h1>Peliculas Favoritas</h1>
+        <div class="container">
+            <div class="row" id="Peliculas">
+            </div>
+        </div>
+</div>
+        </div>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  agregar pelicula
+</button>
+
+<!-- Modal -->
+<form class="modal fade" onsubmit="agregarPelicula(event)" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+  <input type="text" class="form-control" id="tituloPelicula" placeholder="titulo de pelicula">
+  <label for="tituloPelicula">titulo de pelicula</label>
+</div>
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="descripcionPelicula" placeholder="descripcion pelicula">
+  <label for="descripcionPelicula">descripcion pelicula</label>
+</div>
+<div class="form-floating">
+  <input type="text" class="form-control" id="urlImagen" placeholder="url de imagen">
+  <label for="urlImagen">url imagen</label>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">agregar pelicula</button>
+      </div>
+    </div>
+  </div>
+</form>
+    </main>
+<script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
